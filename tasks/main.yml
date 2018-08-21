@@ -12,8 +12,12 @@
   with_items:
     - pystache
     - argparse
-    - python-daemon
     - requests
+
+- name: CFN Bootstrap | Install python-daemon
+  pip:
+    name: python-daemon
+    version: 2.1.2
 
 - name: CFN Boostrap | Download the aws-cfn-bootstrap from AWS
   get_url: 
